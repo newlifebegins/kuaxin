@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure {margin: 0;	padding: 0;}
+div,figure,img,input,button {box-sizing: border-box;}
+body {background-color: #fff;font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;}
+img {display: block;max-width: 100%;}
+ul,ol {list-style: outside none none;}
+a {text-decoration: none;}
+.none {display: none;}
+.sm-visible {display: none;}
+.clearfix:after {content:"."; height:0; visibility:hidden; display:block; clear:both; }
+#header {width: 100%;height: 90px;background: rgba(0,0,0,0.2);/*box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);*/border-bottom: 1px solid rgba(136,149,239,0.2);position: absolute;top: 0;z-index: 9999;}
+#header .center {max-width: 1263px;height: 90px;margin: 0 auto;}
+#header .logo {width: 29%;height: 90px;background: url(../img/logo1.png) no-repeat left center;text-indent: -9999px;float: left;}
+#header .link {width: 71%;height: 90px;line-height: 110px;color: #eee;float: right;}
+#header .link li {max-width: 12%;text-align: center;float: left;padding: 0 24px;}
+#header .link li.fg {width: auto;text-align: center;float: left;padding: 0;}
+#header .link li.search {width: auto;text-align: center;float: left;padding-right: 0;height: 90px;}
+#header .link li.search a {width: 16px;height: 90px;background: url(../img/search.png) no-repeat center 47px;}
+#header .link a {color: #eee;display: block;}
+#header .link a:hover, #header .active a {background-color: transparent;color: #8fc320;}
+#adver {max-width: 1920px;margin: 0 auto;padding: 0 0 0 0;position: relative;}
+#adver .center {width: 511;height: 282px;position: absolute;top: 50%;left: 50%;margin: -141px 0 0 -255px;border-radius: 10px;}
+
+#tour {max-width: 1263px;height: auto;margin: 30px auto;text-align: center;background: #f5f5f5;}
+#tour .center {text-align: center;width: 636px;margin: 0 auto;}
+#tour .center h2 {margin: 10px 0;font-size: 28px;letter-spacing: 2px;color: #333;font-weight: 500;}
+#tour .center p {color: #888;margin: 10px;font-size: 14px;}
+#tour .tour_title {height: 40px;overflow: hidden;}
+#tour figure {display: block;width: 24.2%;margin: 15px 0.4%;text-align: left;float: left;position: relative;}
+#tour figure img {vertical-align: middle;}
+#tour figure div {width: 100%;height: 50px;line-height: 50px;background: rgba(0,0,0,0.4);font-size: 16px;color: #fff;text-indent: 20px;position: absolute;left: 0;bottom: 0;right: 0;}
+#tour .title {color: #333;font-weight: normal;}
+#tour .info {padding: 5px 0 0 0;}
+#tour .price {color: #f60;font-size: 14px;}
+#tour .price strong {font-size: 20px;letter-spacing: 1px;}
+#tour .sat {color: #999;font-size: 13px;font-style: normal;float: right;position: relative;right: 5px;top: 5px;}
+#tour .type {width: 90px;height: 25px;line-height: 25px;text-align: center;border-bottom-right-radius: 4px;background-color: #59b200;font-size: 14px;color: #fff;letter-spacing: 1px;position: absolute;top: 4px;left: 4px;}
+
+#support{text-align: center;}
+#support nav{height: 240px;line-height: 240px;background: #f5f5f5;}
+#support nav ul{height: 240px;background: #f5f5f5;max-width: 1263px;margin: 0 auto;}
+#support li{float: left;width: 25%;height: 100%;line-height: normal;cursor: pointer;}
+#support li h5{width: 100px;height: 100px;margin: 48px auto 24px;}
+#support li:nth-of-type(1) h5{background: url(../img/supnav1.png) no-repeat center;}
+#support li:nth-of-type(2) h5{background: url(../img/supnav2.png) no-repeat center;}
+#support li:nth-of-type(3) h5{background: url(../img/supnav3.png) no-repeat center;}
+#support li:nth-of-type(4) h5{background: url(../img/supnav4.png) no-repeat center;}
+#support li.active,#support li:hover{background: #8fc320;color: #fff;}
+#support .list{max-width: 1263px;margin: 146px auto 146px;text-align: left;}
+#support .list dt{float: left;}
+#support .list dd{margin-left: 590px;}
+#support .list dd h5{font-size: 24px;color: #333;border-bottom: 3px solid #8fc320;border-top: 3px solid #8fc320;display: inline-block;padding: 20px 0;margin: 0;font-weight: 500;}
+#support .list dd p{font-size: 12px;color: #666;line-height: 36px;margin: 39px 0;}
+#support .list dd a{font-size: 16px;padding: 15px 40px;border-radius: 3px;display: inline-block;}
+#support .list dd a:nth-of-type(1){color: #fff;background: #8fc320;border: 1px solid transparent;}
+#support .list dd a:nth-of-type(2){color: #1295f2;border: 1px solid #1295f2;margin-left: 15px;}
+
+#apply{text-align: center;background: #f5f5f5;}
+#apply nav{height: 100px;line-height: 100px;background: url(../img/apply-nav.png) no-repeat center;}
+#apply nav ul{height: 100px;max-width: 1263px;margin: 0 auto;}
+#apply li{float: left;width: 25%;height: 100%;cursor: pointer;font-size: 18px;color: #f5f5f5;}
+#apply li img{display: inline;margin-left: 15px;vertical-align: middle;position: relative;top: -2px;}
+#apply li:nth-of-type(1){background: url(../img/apply-icon1.png) no-repeat 50px center;}
+#apply li:nth-of-type(2){background: url(../img/apply-icon2.png) no-repeat 50px center;}
+#apply li:nth-of-type(3){background: url(../img/apply-icon3.png) no-repeat 50px center;}
+#apply li:nth-of-type(4){background: url(../img/apply-icon4.png) no-repeat 50px center;}
+#apply li.active,#apply li:hover{background-color: #fff;color: #90c221;}
+
+#detail {max-width: 1920px;margin: 0 auto;padding: 0 0 0 0;position: relative;}
+#detail .center {position: absolute;top: 0;left: 50%;margin: 0 0 0 -340px;}
+
+#respon {max-width: 1920px;margin: 0 auto;padding: 0 0 0 0;position: relative;}
+/*#respon .center {position: absolute;top: 0;left: 50%;margin: 0 0 0 -340px;}*/
+
+#news{background: url(../img/news-bg.png) no-repeat center;padding: 50px 0;}
+#news h2{font-size: 32px;color: #333;margin: 15px 0;}
+#news p{font-size: 14px;color: #666;}
+#news #news-list{max-width: 1263px;height: auto;text-align: center;margin: 0 auto;}
+#news #news-list figure {display: block;width: 31%;margin: 70px 1.1%;text-align: left;float: left;position: relative;background: #fff;padding: 20px;box-sizing: border-box;}
+#news #news-list figure figcaption{font-size: 20px;color: #333;font-weight: 500;border-left: 4px solid #90c221;padding-left: 10px;margin: 0;}
+#news #news-list figure figcaption a{float: right;font-size: 14px;color: #666;padding-top: 10px;}
+#news #news-list figure dl{margin-top: 30px;}
+#news #news-list figure dt{float: left;}
+#news #news-list figure dd{margin-left: 112px;}
+#news #news-list figure dd h6{font-size: 16px;color: #333;font-weight: 500;margin: 9px 0;}
+#news #news-list figure dd p{font-size: 12px;color: #888;line-height: 24px;}
+#news #news-list figure .hot-news{position: relative;margin: 30px auto 22px;text-align: center;}
+#news #news-list figure .hot-news img{width: 100%;}
+#news #news-list figure .hot-news p{width: 100%;height: 35px;line-height: 35px;background: rgba(0,0,0,0.67);font-size: 16px;color: #fff;position: absolute;left: 0;bottom: 0;right: 0;}
+#news #news-list figure .hot-list{font-size: 16px;color: #333;line-height: 40px;margin: 1px 0;}
+#news #news-list figure .hot-list em{font-style: normal;font-size: 14px;color: #90c221;padding-right: 5px;position: relative;top: -2px;}
+#news #news-list figure .hot-list span{float: right;font-size: 14px;color: #666;}
+
+#footer {background: #222 url(../img/footer.png) no-repeat center;clear:both;position: relative;top: 20px;}
+#footer .top {max-width: 1263px;height: 280px;margin: 0 auto;text-align: center;}
+#footer .version {color: #777;text-align: center;padding: 10px 0;}
+#footer .block {width: 10%;height: 320px;display: inline-block;color: #ccc;text-align: left;vertical-align: top;display: block;float: left;margin-left: 4%;}
+#footer .block:first-child{margin-left: 0;}
+#footer .block:last-child li{float: left;font-size: 14px;color: #fff;text-align: center;margin: 28px 0 0 8px;}
+#footer .block.max{width: 20%;}
+#footer .bottom {padding: 15px 0;text-align: left;color: #777;border-top: 1px solid #444;}
+#footer .bottom p{max-width: 1263px;margin: 0 auto;}
+#footer h2 {font-weight: normal;padding: 20px 0 0 20px;font-size: 14px;color: #fff;}
+#footer hr {width: 90%;border: 1px solid #333;}
+#footer ul {color: #919090;font-size: 12px;text-indent: 20px;line-height: 2;}
+#footer .call{width: 120px;height: 33px;text-align: center;line-height: 33px;border-radius: 3px;font-size: 12px;color: #fff;display: inline-block;background: #444343 url(../img/chat.png) no-repeat 20px center;margin-right: 10px;}
+#footer i{font-style: normal;color: #777;float: right;}
+/*媒体查询，参考部分Bootstrap 框架*/
+/*当页面大于1200px 时，大屏幕，主要是PC 端*/
+@media (min-width: 1200px) {
+	
+}
+/*在992 和1199 像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#adver .center {width: 50%;margin: -10px 0 0 -25%;}
+	#tour .center h2 {font-size: 40px;}
+	#headline hgroup {left: 8%;}
+	#headline h2 {font-size: 36px;}
+	#headline h3 {font-size: 20px;}
+	.sidebar {display: none;}
+	.list {width: 100%;padding: 0 20px}
+}
+/*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#adver .center {width: 60%;margin: -10px 0 0 -30%;}
+	#adver .search, #adver .button {font-size: 20px;}
+	#tour .center h2 {font-size: 35px;}
+	#headline hgroup {left: 8%;}
+	#headline h2 {font-size: 30px;}
+	#headline h3 {font-size: 16px;}
+	.sidebar {display: none;}
+	.list {width: 100%;padding: 0 20px}
+	.list h2 {font-size: 28px;}
+	.about p,.about address {font-size: 18px;}
+	.ticket .left, .ticket .right, .ticket .button {width: 98%;display: block;}
+	.ticket .form input {width: 98%;height: 35px;margin: 0;}
+	.ticket .form p {line-height: 2;}
+	.ticket .submit {display: block;width: 30%;height: auto;line-height: 2;position: static;margin:10px auto;}
+	.md-hidden {display: none;}
+	.tour h2 {font-size: 22px;}
+	.tour .buy {position: absolute;top: auto;right: auto;bottom: 0;padding: 0 0 0 25px;}
+}
+/*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header, #header .center, #header .link {height: 45px;}
+	#header .logo, .sm-hidden,.sidebar,.md-hidden {display: none;}
+	#header .link {width: 100%;line-height: 45px;}
+	#adver {padding: 45px 0 0 0;}
+	#adver .center {width: 70%;height: 53px;margin: -10px 0 0 -35%;}
+	#adver .search, #adver .button {height: 45px;font-size: 18px;}
+	.sm-visible {display: block;}
+	#tour .center h2 {font-size: 30px;}
+	#tour .center p {font-size: 15px;}
+	#tour figure {width: 49.2%;}
+	#headline {padding: 45px 0 0 0;}
+	#headline hgroup {left: 8%;}
+	#headline h2 {font-size: 26px;}
+	#headline h3 {font-size: 14px;}
+	.list {width: 100%;padding: 0 20px;}
+	.list h2 {font-size: 25px;}
+	.about p,.about address {font-size: 15px;}
+	.scenery figure {width: 48.2%;}
+	.scenery figcaption {font-size: 18px;}
+	.ticket .left, .ticket .right, .ticket .button {width: 98%;display: block;}
+	.ticket .form input {width: 98%;height: 35px;margin: 0;}
+	.ticket .form p {line-height: 2;}
+	.ticket .submit {display: block;width: 30%;height: auto;line-height: 2;position: static;margin:10px auto;}
+	.ticket .type, .ticket .form, .ticket .new, .ticket .form input, .ticket .submit, .ticket .reserve {font-size: 16px;}
+	.tour h2 {font-size: 16px;height: 20px;padding: 5px 0 10px 15px;}
+	.tour h3 {font-size: 14px;padding: 5px 0 5px 15px;}
+	.tour .buy {position: absolute;top: auto;right: auto;bottom: 0;padding: 0 0 0 15px;}
+	.tour .buy strong {font-size: 18px;}
+}
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	#header, #header .center, #header .link {height: 45px;}
+	#header .logo, .xs-hidden, .sm-hidden, .sidebar, .md-hidden  {display: none;}
+	#header .link {width: 100%;line-height: 45px;}
+	#header .link li {width: 25%;}
+	#adver {padding: 45px 0 0 0;}
+	#adver .center {width: 80%;height: 48px;margin: -10px 0 0 -40%;}
+	#adver .search, #adver .button {height: 40px;font-size: 16px;}
+	.sm-visible {display: block;}
+	#footer .bottom, #footer .version {font-size: 13px;}
+	#tour .center h2 {font-size: 26px;}
+	#tour .center p {font-size: 14px;}
+	#tour figure {width: 99%;}
+	#headline hgroup {left: 8%;}
+	#headline h2 {font-size: 20px;}
+	#headline h3 {font-size: 12px;}
+	#headline {padding: 45px 0 0 0;}
+	.list {width: 100%;padding: 0 20px;}
+	.list h2 {font-size: 20px;}
+	.about p,.about address {font-size: 14px;}
+	.scenery figure {width: 99%;}
+	.scenery figcaption {font-size: 16px;}
+	.ticket .left, .ticket .right, .ticket .button {width: 98%;display: block;}
+	.ticket .form input {width: 98%;height: 35px;margin: 0;}
+	.ticket .form p {line-height: 2;}
+	.ticket .submit {display: block;width: 30%;height: auto;line-height: 2;position: static;margin:10px auto;}
+	.ticket .type, .ticket .form, .ticket .new, .ticket .form input, .ticket .submit, .ticket .reserve {font-size: 14px;}
+	.ticket .reserve {display: inline-block;width: auto;height: auto;line-height: 1;border-radius: 4px;background-color: #f60;color: #fff;padding: 8px;text-align: center;}
+	.tour h2 {font-size: 16px;height: 15px;padding: 5px 0 5px 15px;line-height: 15px;}
+	.tour h3 {font-size: 14px;padding: 5px 0 5px 15px;height: 15px;overflow: hidden;}
+	.tour .buy {position: absolute;top: auto;right: auto;bottom: 0;padding: 0 0 0 15px;}
+	.tour .buy strong,.tour .buy .price s, .tour .buy .price {font-size: 15px;}
+}
